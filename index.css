@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 
-img{
+#icon{
     position: absolute;
     left: 2%;
     top: 6%;
