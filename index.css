@@ -4,16 +4,15 @@ body{
 
 #icon{
     position: relative;
-    left: 2%;
-    top: 6%;
+    left: 5%;
+    top: 115px;
     height: 128px;
     width: 128px;
 }
 
 h1{
     position: relative;
-    top: -4.8%;
-    left: 10%;
+    left: 13%;
 
     font-size: 40px;
     font-family: Arial;
