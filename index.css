@@ -3,30 +3,40 @@ body{
 }
 
 #icon{
-    position: absolute;
+    position: relative;
     left: 2%;
-    top: 6.4%;
-    height: 50px;
-    width: 50px;
+    top: 6%;
+    height: 128px;
+    width: 128px;
 }
 
 h1{
+    position: relative;
+    top: -4.8%;
+    left: 10%;
+
+    font-size: 40px;
     font-family: Arial;
-    position: absolute;
     color: black;
-    left: 5%;
-    top: 5%;
 }
 
 #explanation{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
 
+    color: #2d2d2d;
+    font-family: Arial;
+    font-size: 20px;
 }
 
 #name{
-    font-family: Arial;
-    font-size: 20px;
-    color: #2d2d2d;
     position: absolute;
     right: 5%;
     bottom: 20px;
+
+    font-family: Arial;
+    font-size: 20px;
+    color: #5d5d5d;
 }
