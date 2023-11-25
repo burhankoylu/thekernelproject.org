@@ -4,7 +4,7 @@ body{
 
 #icon{
     position: relative;
-    left: 5%;
+    left: 90px;
     top: 115px;
     height: 128px;
     width: 128px;
@@ -22,8 +22,8 @@ h1{
 #explanation{
     position: absolute;
     margin-top: 5%;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
 
     color: #2d2d2d;
     font-family: Arial;
