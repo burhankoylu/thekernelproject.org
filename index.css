@@ -3,7 +3,7 @@ body{
 }
 
 #icon{
-    position: absolute;
+    position: relative;
     left: 2%;
     top: 6%;
     height: 50px;
