@@ -3,9 +3,9 @@ body{
 }
 
 #icon{
-    position: relative;
+    position: absolute;
     left: 2%;
-    top: 6%;
+    top: 6.4%;
     height: 50px;
     width: 50px;
 }
