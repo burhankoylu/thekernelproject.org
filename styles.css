@@ -1,20 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    margin: -10px;
+    margin: 0;
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow-x: hidden; /* Yatay taşmaları gizle */
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 18px;
     position: relative;
     display: flex;
     justify-content: left;
@@ -84,7 +88,6 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    margin: -10px;;
     padding: 10px;
     width: 100%;
 }
