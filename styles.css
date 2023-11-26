@@ -12,14 +12,11 @@ body {
 }
 
 header {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 18px;
+    position: relative;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -75,8 +72,6 @@ aside {
 }
 
 main {
-    position: relative;
-    top: 100px;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -86,10 +81,7 @@ main {
 }
 
 footer {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    bottom: 0px;
+    position: relative;
     background-color: #333;
     color: white;
     text-align: center;
