@@ -44,20 +44,19 @@ nav {
     margin-right: 20px;
 }
 
-
 aside {
     position: absolute;
-    top: 0%;
+    top: 104px;
     right: 0%;
     bottom: 0%;
     width: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     transition: width 0.5s;
@@ -67,11 +66,17 @@ aside {
     width: 200px;
 }
 
-#MenuButtons {
+.menu-link {
     color: #fff;
     text-decoration: none;
     text-align: center;
     margin-top: 40px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 main {
