@@ -19,15 +19,17 @@ header {
     color: white;
     text-align: center;
     padding: 18px;
-    position: relative;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
 #icon {
-    width: 64px;
-    height: 64px;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
 }
 
 #title {
@@ -38,55 +40,104 @@ header {
 }
 
 #menu_icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     right: 0px;
-    margin-top: 40px;
-    margin-right: 20px;
+    margin: 24px;
 }
 
 aside {
-    position: absolute;
-    top: 104px;
-    right: 0%;
-    bottom: 0%;
+    z-index: 1;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    bottom: 0;
     width: 0;
     overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: white;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     transition: width 0.3s;
 }
-
+  
 .menu-button.active + aside {
     width: 200px;
+}
+  
+.menu-button.active + aside .language-menu {
+    display: block;
 }
 
 .menu-link {
     color: #fff;
     text-decoration: none;
-    text-align: center;
-    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    position: relative;
+    top: 20px;
+    padding: 20px;
+    border-left: 5px solid transparent;
     box-sizing: border-box;
     font-size: 16px;
     width: 200px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    transition: border-color 0.2s;
+}
+
+.menu-link:hover {
+    border-color: #f0f0f0;
+}
+
+.language {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    border-left: 5px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    transition: border-color 0.2s;
+}
+  
+.languages {
+    display: none;
+}
+  
+.language-menu.show-languages .languages {
+    display: block;
+}
+  
+.language-item {
+    z-index: 2;
+    position: relative;
+    top: -100px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    transition: border-color 0.2s;
+    display: block;
+    padding: 20px;
+    border-left: 5px solid transparent;
+    background-color: #333;
+}
+  
+.language-item:hover {
+    border-color: #f0f0f0;
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
+    margin-top: 100px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -95,7 +146,7 @@ main {
 
 footer {
     position: relative;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     padding: 10px;
