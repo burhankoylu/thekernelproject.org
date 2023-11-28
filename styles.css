@@ -22,14 +22,18 @@ header {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: left;
     align-items: center;
 }
 
+#menu_icon {
+    width: 20px;
+    height: 20px;
+}
+
 #icon {
+    margin-top: 5px;
     width: 30px;
     height: 30px;
-    margin-top: 5px;
 }
 
 #title {
@@ -39,18 +43,13 @@ header {
     margin-left: 10px;
 }
 
-#menu_icon {
-    width: 20px;
-    height: 20px;
-}
-
 nav {
     position: fixed;
     right: 0px;
-    margin: 24px;
+    margin: 26px;
 }
 
-aside {
+aside, .second-aside {
     z-index: 1;
     position: fixed;
     top: 75px;
@@ -67,21 +66,32 @@ aside {
     flex-direction: column;
     transition: width 0.3s;
 }
-  
-.menu-button.active + aside {
+
+.second-aside {
+    width: 200px;
+    overflow: hidden;
+    display: none;
+}
+
+.second-aside.show-second-aside {
+    display: flex;
+}
+
+.menu-button.active + aside,
+.menu-button.active + .second-aside {
     width: 200px;
 }
-  
-.menu-button.active + aside .language-menu {
+
+.menu-button.active + aside .language-menu,
+.menu-button.active + .second-aside .language-menu {
     display: block;
 }
 
-.menu-link {
+.menu-link, .language, .language-item {
     color: #fff;
     text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    top: 20px;
     padding: 20px;
     border-left: 5px solid transparent;
     box-sizing: border-box;
@@ -93,7 +103,7 @@ aside {
     transition: border-color 0.2s;
 }
 
-.menu-link:hover {
+.menu-link:hover, .language-item:hover, .language:hover {
     border-color: #f0f0f0;
 }
 
@@ -102,36 +112,7 @@ aside {
     bottom: 20px;
     padding: 20px;
     border-left: 5px solid transparent;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     transition: border-color 0.2s;
-}
-  
-.languages {
-    display: none;
-}
-  
-.language-menu.show-languages .languages {
-    display: block;
-}
-  
-.language-item {
-    z-index: 2;
-    position: relative;
-    top: -100px;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-    transition: border-color 0.2s;
-    display: block;
-    padding: 20px;
-    border-left: 5px solid transparent;
-    background-color: #333;
-}
-  
-.language-item:hover {
-    border-color: #f0f0f0;
 }
 
 main {
