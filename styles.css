@@ -125,6 +125,44 @@ main {
     flex: 1;
 }
 
+#link {
+    text-decoration: none; /* Link altı çizgisi kaldırma */
+    display: flex;
+    align-items: start; /* Dikeyde ortalamayı sağlama */
+    border: 2px solid #ddd; /* Çerçeve rengi */
+    border-radius: 10px; /* Çerçeve köşe yuvarlama */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+    text-align: left;
+    margin-top: 10px; /* Üst boşluğu ayarlama */
+}
+
+#link_image {
+    width: 100px; /* Resim genişliği */
+    height: 100px; /* Resim yüksekliği */
+    margin-right: 10px; /* Resim ile başlık/metin arasındaki boşluk */
+}
+
+#link_text_container {
+    display: flex;
+    flex-direction: column; /* Dikeyde düzenleme */
+    align-items: start; /* Başlık ve metni sola hizalama */
+}
+
+#link_title {
+    margin: 0px 0 2px 0;
+    font-size: 20px;
+    color: #0f0f0f;
+}
+
+#link_text {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
 footer {
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
