@@ -126,27 +126,27 @@ main {
 }
 
 #link {
-    text-decoration: none; /* Link altı çizgisi kaldırma */
+    text-decoration: none;
     display: flex;
-    align-items: start; /* Dikeyde ortalamayı sağlama */
-    border: 2px solid #ddd; /* Çerçeve rengi */
-    border-radius: 10px; /* Çerçeve köşe yuvarlama */
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    margin-top: 10px; /* Üst boşluğu ayarlama */
+    margin-top: 10px;
 }
 
 #link_image {
-    width: 100px; /* Resim genişliği */
-    height: 100px; /* Resim yüksekliği */
-    margin-right: 10px; /* Resim ile başlık/metin arasındaki boşluk */
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
 }
 
 #link_text_container {
     display: flex;
-    flex-direction: column; /* Dikeyde düzenleme */
-    align-items: start; /* Başlık ve metni sola hizalama */
+    flex-direction: column;
+    align-items: start;
 }
 
 #link_title {
@@ -160,8 +160,6 @@ main {
     font-size: 14px;
     color: #333;
 }
-
-
 
 footer {
     position: relative;
